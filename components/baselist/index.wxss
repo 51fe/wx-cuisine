@@ -26,6 +26,7 @@
 }
 
 .base-list-item_title {
+  width: 220rpx;
   font-size: 24rpx;
   text-align: center;
   white-space: nowrap;

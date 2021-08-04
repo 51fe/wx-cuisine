@@ -3,15 +3,14 @@
 }
 
 .navbar {
-  display: flex;
-  padding: 16rpx;
+  padding: 8px 16rpx;
   background-color: var(--white);
 }
 
 .nav-item {
-  padding-left:  8rpx;
-  padding-right:  8rpx;
-  font-size: 30rpx;
+  padding-left: 12rpx;
+  padding-right: 12rpx;
+  font-size: 32rpx;
   color: var(--black);
 }
 
