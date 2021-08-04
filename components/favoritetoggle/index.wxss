@@ -1,0 +1,19 @@
+.favorite-toggle {
+  position: fixed;
+  z-index: 1;
+  right: 16rpx;
+  bottom: 32rpx;
+  width: 64rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  border-radius: 100%;
+  background-color: var(--half-transparent);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-align: center;
+  color: #eee;
+}
+
+.favorite-toggle-hover {
+  background-color: var(--green);
+}

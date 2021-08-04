@@ -1,0 +1,23 @@
+module.exports = {
+  /**
+   * 转换成数组
+   * @param value
+   */
+  toArray: function(value) {
+    if (value) {
+      return value.split(',')
+    }
+    return []
+  },
+ /**
+  *  去除回车换行
+  * @param value
+  */
+  trimBr: function(value) {
+    if (value) {
+      var re = getRegExp('<br />\n', 'g')
+      return value.replace(re, '');
+    }
+    return ''
+  }
+}

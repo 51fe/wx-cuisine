@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/category/index",
+    "pages/detail/index",
+    "pages/search/index",
+    "pages/favorite/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "@navigationBarTextStyle",
+    "navigationBarBackgroundColor": "@navigationBarBackgroundColor",
+    "backgroundColor": "@backgroundColor"
+  },
+  "tabBar": {
+    "color": "@tabBarColor",
+    "selectedColor": "@tabBarSelectedColor",
+    "borderStyle": "@tabBarBorderStyle",
+    "backgroundColor": "@tabBarBackgroundColor",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "推荐",
+        "iconPath": "@iconPathHome",
+        "selectedIconPath": "@selectedIconPathHome"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "@iconPathCategory",
+        "selectedIconPath": "@selectedIconPathCategory"
+      },
+      {
+        "pagePath": "pages/search/index",
+        "text": "搜索",
+        "iconPath": "@iconPathSearch",
+        "selectedIconPath": "@selectedIconPathSearch"
+      },
+      {
+        "pagePath": "pages/favorite/index",
+        "text": "收藏",
+        "iconPath": "@iconPathFavorite",
+        "selectedIconPath": "@selectedIconPathFavorite"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "themeLocation": "theme.json",
+  "darkmode": true,
+  "resizable": true,
+  "useExtendedLib": {
+    "weui": true
+  },
+  "usingComponents": {
+    "empty-data": "./components/emptydata/index"
+  }
+}

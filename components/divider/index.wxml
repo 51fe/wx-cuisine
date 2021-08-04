@@ -1,0 +1,7 @@
+<view class="divider">
+  <view class="line {{contentPosition == 'left' ? 'fixed': ''}}"></view>
+  <view class="content content-class">
+    <slot></slot>
+  </view>
+  <view class="line {{contentPosition == 'right' ? 'fixed': ''}}"></view>
+</view>

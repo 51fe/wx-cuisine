@@ -1,0 +1,15 @@
+<view class="search">
+  <view class="seachbar">
+    <input 
+      type="text " 
+      value="{{keyword}}"
+      confirm-type="search"
+      placeholder="菜名、食材"
+      placeholder-class="iconfont icon-search grey"
+      maxlength="40" 
+      bindconfirm="onConfirm" 
+    />
+  </view>
+  <empty-data wx:if="{{list.length === 0}}" loading="{{ loading }}"></empty-data>
+  <base-list wx:else list="{{list}}" class="search-list"></base-list>
+</view>

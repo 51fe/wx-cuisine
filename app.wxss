@@ -1,0 +1,40 @@
+@import "assets/fonts/iconfont.wxss";
+
+[data-weui-theme=light],
+page {
+  --white: #fff;
+  --white-light: #f7f7f7;
+  --white-dark: #f1f1f1;
+  --light: #ddd;
+  --grey: #999;
+  --dark: #2c2c2c;
+  --black: #000;
+  --green: #3cc51f;
+  --half-transparent: rgba(0, 0, 0, 0.5);
+}
+
+@media(prefers-color-scheme: dark) {
+  page{
+    --white: #000;
+    --white-light: #1f1f1f;
+    --white-dark: #2c2c2c;
+    --light: #999;
+    --grey: #ddd;
+    --dark: #f7f7f7;
+    --black: #fff;
+    --green: #3cc51f;
+    --half-transparent: rgba(255, 255, 255, 0.5);
+  }
+}
+
+page {
+  height: 100%;
+  line-height: 1.6;
+  background-color: var(--white-light);
+  color: var(--black);
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+.grey {
+  color: var(--grey);
+}

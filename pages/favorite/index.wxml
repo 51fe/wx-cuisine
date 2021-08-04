@@ -1,0 +1,12 @@
+<empty-data wx:if="{{list.length === 0}}"></empty-data>
+<view wx:else class="favorite-list">
+    <view
+      wx:for="{{list}}"
+      wx:key="id" 
+      id="{{item.id}}" 
+      class="btn"
+      hover-class="btn-hover-class"
+      hover-stop-propagation="true"
+      bindtap="goDetail"
+    >{{item.name}}</view>
+  </view>

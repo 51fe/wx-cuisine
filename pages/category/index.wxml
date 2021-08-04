@@ -1,0 +1,32 @@
+<view class="category">
+  <empty-data wx:if="{{list.length === 0}}" loading="{{ loading }}"></empty-data>
+  <mp-vtabs 
+    wx:else
+    vtabs="{{vtabs}}" 
+    tab-line-color="var(--green);"
+    tab-active-bg-color="var(--white)"
+    tab-active-text-color="var(--green)"
+    tab-inactive-bg-color="var(--white-dark)"
+    tab-inactive-text-color="var(--black)"
+    activeTab="{{ activeTab }}"
+  >
+    <view class="wrapper">
+      <mp-vtabs-content wx:for="{{vtabs}}" wx:key="id" tabIndex="{{index}}">
+        <divider content-class="divider-title">{{item.name}}</divider>
+        <view class="link-list">
+          <view
+            wx:for="{{item.list}}" 
+            wx:for-item="link" 
+            wx:key="classid"
+            id="{{ link.classid}}"
+            data-name="{{link.name}}"
+            class="btn"
+            hover-class="btn-hover-class"
+            hover-stop-propagation="true"
+            bindtap="handleSelect"
+          >{{ link.name }}</view>
+        </view>
+      </mp-vtabs-content>
+    </view>
+  </mp-vtabs>
+</view>

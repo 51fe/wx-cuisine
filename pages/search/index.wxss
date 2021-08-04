@@ -1,0 +1,36 @@
+.search {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.seachbar {
+  width: 100%;
+  height: 96rpx;
+  background: var(--green);
+  padding: 16rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.seachbar input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1rpx solid var(--light);
+  background: var(--white);
+  border-radius: 8rpx;
+  padding-left: 32rpx;
+  box-sizing: border-box;
+}
+
+.icon-search {
+  font-size: 28rpx;
+}
+
+.search-list {
+  position: absolute;
+  top: 96rpx;
+  left: 0;
+  right: 0;
+  bottom: 16rpx;
+  overflow-y: auto;
+}

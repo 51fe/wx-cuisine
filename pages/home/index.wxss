@@ -1,0 +1,20 @@
+.home {
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  padding: 16rpx;
+  background-color: var(--white);
+}
+
+.nav-item {
+  padding-left:  8rpx;
+  padding-right:  8rpx;
+  font-size: 30rpx;
+  color: var(--black);
+}
+
+.nav-item.activeClass {
+  color: var(--green);
+}

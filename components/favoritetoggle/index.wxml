@@ -1,0 +1,8 @@
+<view 
+  hover-class="favorite-toggle-hover" 
+  hover-stop-propagation="true" 
+  class="favorite-toggle"
+  bindtap="toggle"
+>
+  <text class="~iconfont {{toggled ? '~icon-unfavorite' : '~icon-favorite'}}"></text>
+</view>

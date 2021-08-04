@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "base-list": "../../components/baselist/index"
+  },
+  "navigationBarTitleText": "搜一搜吧"
+}

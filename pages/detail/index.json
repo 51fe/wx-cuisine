@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "favorite-toggle": "../../components/favoritetoggle/index",
+    "divider": "../../components/divider/index"
+  },
+  "navigationBarTitleText": "加载中..."
+}

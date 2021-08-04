@@ -1,0 +1,6 @@
+<view class="base-list">
+    <view class="base-list-item" wx:for="{{list}}" wx:key="id" id="{{item.id}}" bindtap="goDetail">
+      <image src="{{item.pic}}" mode="widthFix" class="base-list-item_pic"></image>
+      <view class="base-list-item_title">{{item.name}}</view>
+    </view>
+  </view>

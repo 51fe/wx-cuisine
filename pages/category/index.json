@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-vtabs": "../../components/vtabs/index",
+    "mp-vtabs-content": "../../components/vtabs-content/index",
+    "divider": "../../components/divider/index"
+  },
+  "navigationBarTitleText": "所有分类"
+}

@@ -1,0 +1,16 @@
+.btn {
+  display: block;
+  padding: 16rpx;
+  border-bottom: 1px solid var(--light);
+  background-color: var(--white-light);
+  font-size: 30rpx;
+  color: var(--dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.btn-hover-class {
+  background-color: var(--white);
+  color: var(--green)
+}
