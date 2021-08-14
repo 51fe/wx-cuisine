@@ -1,4 +1,4 @@
-<view class="weui-vtabs">
+<view hidden="{{vtabs.length === 0}}" class="weui-vtabs">
   <view class="weui-vtabs-bar__wrp {{tabBarClass}}">
     <scroll-view 
       scroll-y

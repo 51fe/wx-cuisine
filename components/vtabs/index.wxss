@@ -7,9 +7,6 @@
 .weui-vtabs-bar__wrp {
   width: 200rpx;
   height: 100%;
-  margin-top: 56rpx;
-  box-sizing: border-box;
-  background-color: var(--white-dark);
 }
 
 .weui-vtabs-bar__scrollview {

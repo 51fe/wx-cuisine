@@ -5,32 +5,24 @@ Page({
   data: {
     navs,
     currentId: '',
-    windowHeight: 400,
     list: [],
-    loading: false
+    loading: true
   },
-  
+
   onLoad(options) {
     this.hasMore = false
     this.start = 0
-    wx.getSystemInfo({
-      success: res => {
-        this.setData({
-          windowHeight: res.windowHeight
-        })
-      }
-    })
-    let item = navs[0]
+    let item = navs[4]
     // 根据时间段推荐
     const hour = new Date().getHours()
-    if (9 <= hour && hour < 14) {
+    if (10 <= hour && hour < 15) {
       item = navs[1]
-    } else if (14 <= hour && hour < 18) {
+    } else if (15 <= hour && hour < 18) {
       item = navs[2]
     } else if (18 <= hour && hour < 20) {
       item = navs[3]
-    } else if (20 <= hour && hour < 23) {
-      item = navs[4]
+    } else if (6 <= hour && hour < 10) {
+      item = navs[0]
     }
     let id = item.id
     // 传递的参数优先
@@ -53,13 +45,14 @@ Page({
 
   fetchData() {
     const num = 18
+    const dataList = this.data.list
     this.setData({ loading: true })
     request('byclass', {
       classid: this.data.currentId,
       start: this.start,
       num,
-    }).then(result => {
-      const list = this.data.list.concat(result.list)
+    }, dataList.length === 0).then(result => {
+      const list = dataList.concat(result.list)
       this.start += num
       this.hasMore = list.length < result.total
       this.setData({ list, loading: false })
@@ -68,9 +61,27 @@ Page({
     })
   },
 
-  loadMore() {
+  loadMore(e) {
     if (this.hasMore) {
       this.fetchData();
+    } else {
+      wx.showToast({
+        title: '没有更多了~',
+        icon: 'none',
+        duration: 2000
+      })
+    }
+  },
+
+  handleScroll(e) {
+    if (e.detail.deltaY > 0) {
+      // 保证只执行一次隐藏
+      if (!this.hidden) {
+        this.hidden = true
+        wx.hideToast()
+      }
+    } else {
+      this.hidden = false
     }
   },
 

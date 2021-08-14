@@ -54,9 +54,6 @@
   "themeLocation": "theme.json",
   "darkmode": true,
   "resizable": true,
-  "useExtendedLib": {
-    "weui": true
-  },
   "usingComponents": {
     "empty-data": "./components/emptydata/index"
   }

@@ -3,8 +3,8 @@
   flex-direction: column;
   justify-content: center;
   padding: 8rpx;
-  font-size: 26rpx;
   box-sizing: border-box;
+  font-size: 28rpx;
 }
 
 .img {
@@ -19,6 +19,7 @@
 .title {
   margin-top: 16rpx;
   margin-bottom: 16rpx;
+  font-size: 32rpx;
 }
 
 .brief {
@@ -36,7 +37,7 @@
 }
 
 .iconfont {
-  width: 28px;
+  width: 48rpx;
   font-size: 40rpx;
 }
 
@@ -48,7 +49,6 @@
 
 .detail-content {
   padding: 24rpx 16rpx;
-  line-height: 2;
 }
 
 .material-list {
@@ -86,7 +86,7 @@
 
 .detail-tag {
   margin-bottom: 16rpx;
-  background-color: var(--white); 
+  background-color: var(--white);
 }
 
 .tag-wrapper {
