@@ -5,7 +5,7 @@ Page({
     windowHeight: '400',
     keyword: '',
     list: [],
-    loading: false
+    loading: true
   },
 
   onConfirm(e) {
@@ -17,11 +17,11 @@ Page({
         }
       })
       this.setData({ list: [], loading: true })
-      request('search', { 
+      request('search', {
         keyword,
         num: 18,
-      }).then(({list}) => {
-        this.setData({ list,  loading: false })
+      }).then(({ list }) => {
+        this.setData({ list, loading: false })
       }).catch(() => {
         this.setData({ loading: false })
       })
@@ -34,8 +34,8 @@ Page({
     }
     // 更新导航栏标题
     wx.setNavigationBarTitle({
-      title: '搜索' +　keyword
+      title: '搜索' + keyword
     })
-    this.setData({keyword: ''})
+    this.setData({ keyword: '' })
   }
 })

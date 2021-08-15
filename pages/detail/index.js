@@ -21,18 +21,12 @@ Page({
       })
       this.update(result)
     } else {
-      wx.showLoading({
-        title: '加载中',
-        icon: 'loading'
-      })
       // 外部链接进入时需要调用详情接口
       request('detail', { id }).then(result => {
-        wx.hideLoading()
         const detail = result
         this.setData({ detail, loading: false })
         this.update(detail)
       }).catch(() => {
-        wx.hideLoading()
         this.setData({ loading: false })
       })
     }
@@ -60,9 +54,7 @@ Page({
       const title = result.name
       wx.setNavigationBarTitle({ title })
       this.title = title
-      this.setData({
-        detail: result
-      })
+      this.setData({ detail: result })
     }
   }
 })

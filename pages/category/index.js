@@ -4,7 +4,7 @@ Page({
   data: {
     vtabs: [],
     activeTab: 0,
-    loading: false
+    loading: true
   },
 
   onLoad() {
