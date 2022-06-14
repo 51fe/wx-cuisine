@@ -14,14 +14,14 @@
 
 ## 效果截图
 
-![效果截图](https://raw.githubusercontent.com/51fe/wx-cuisine/main/snapshots/home.jpg)
-![效果截图](https://raw.githubusercontent.com/51fe/wx-cuisine/main/snapshots/detail.jpg)
-![效果截图](https://raw.githubusercontent.com/51fe/wx-cuisine/main/snapshots/category.jpg)
-![效果截图](https://raw.githubusercontent.com/51fe/wx-cuisine/main/snapshots/home-dark.jpg)
+![效果截图](https://www.riafan.com/github/wx-cuisine/home.jpg)
+![效果截图](https://www.riafan.com/github/wx-cuisine//detail.jpg)
+![效果截图](https://www.riafan.com/github/wx-cuisine/category.jpg)
+![效果截图](https://www.riafan.com/github/wx-cuisine/home-dark.jpg)
 
 ## 扫码体验
 
-![扫码体验](https://raw.githubusercontent.com/51fe/wx-cuisine/main/snapshots/qr-code.jpg)
+![扫码体验](https://www.riafan.com/github/wx-cuisine/qr-code.jpg)
 
 ## 获取云服务
 
