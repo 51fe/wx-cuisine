@@ -15,7 +15,7 @@
 ## 效果截图
 
 ![效果截图](https://www.riafan.com/github/wx-cuisine/home.jpg)
-![效果截图](https://www.riafan.com/github/wx-cuisine//detail.jpg)
+![效果截图](https://www.riafan.com/github/wx-cuisine/detail.jpg)
 ![效果截图](https://www.riafan.com/github/wx-cuisine/category.jpg)
 ![效果截图](https://www.riafan.com/github/wx-cuisine/home-dark.jpg)
 
