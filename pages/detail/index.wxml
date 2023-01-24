@@ -3,7 +3,7 @@
 <view class="detail">
   <image src="{{detail.pic}}" mode="widthFix" class="img"></image>
   <view class="section brief">
-    <view wx:for="{{briefList}}" wx:key="key" class="brief-item">
+    <view wx:for="{{filter.getBriefList(detail)}}" wx:key="key" class="brief-item">
       <text class="iconfont icon-{{item.key}}"></text>
       <view class="text-wrapper">
         <text>{{item.value}}</text>
@@ -25,7 +25,7 @@
   <view class="section">
     <divider content-class="title">做法</divider>
     <view wx:for="{{detail.process}}" wx:key="pic" class="process-item">
-      <text class="item-description">{{index + 1 + '. ' + filter.trimBr(item.pcontent)}}</text>
+      <text class="item-description">{{filter.trimText(item.pcontent, index)}}</text>
       <image src="{{item.pic}}" mode="widthFix" class="img"></image>
     </view>
   </view>

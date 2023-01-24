@@ -10,6 +10,7 @@ page {
   --dark: #2c2c2c;
   --black: #000;
   --green: #3cc51f;
+  --green-dark: #008080;
   --half-transparent: rgba(0, 0, 0, 0.5);
 }
 
@@ -18,11 +19,12 @@ page {
     --white: #000;
     --white-light: #1f1f1f;
     --white-dark: #2c2c2c;
-    --light: #999;
-    --grey: #ddd;
+    --light: #ddd;
+    --grey: #aaa;
     --dark: #f7f7f7;
     --black: #fff;
     --green: #3cc51f;
+    --green-dark: #666;
     --half-transparent: rgba(255, 255, 255, 0.5);
   }
 }
@@ -30,7 +32,7 @@ page {
 page {
   height: 100%;
   line-height: 1.6;
-  background-color: var(--white-light);
+  background-color: var(--white-dark);
   color: var(--black);
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
 }

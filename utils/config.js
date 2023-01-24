@@ -17,12 +17,7 @@ const config = {
   }, {
     name: '夜宵',
     id: '566'
-  }],
-  briefList: [
-    ['preparetime', '准备时间'],
-    ['cookingtime', '制作时间'],
-    ['peoplenum', '用餐人数']
-  ]
+  }]
 }
 
 module.exports = config

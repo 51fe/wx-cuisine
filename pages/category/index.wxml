@@ -12,7 +12,7 @@
   >
     <view class="wrapper">
       <mp-vtabs-content wx:for="{{vtabs}}" wx:key="id" tabIndex="{{index}}">
-        <divider content-class="divider-title">{{item.name}}</divider>
+        <divider content-class="title">{{item.name}}</divider>
         <view class="link-list">
           <view
             wx:for="{{item.list}}" 

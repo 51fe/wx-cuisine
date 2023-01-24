@@ -3,21 +3,49 @@ module.exports = {
    * 转换成数组
    * @param value
    */
-  toArray: function(value) {
+  toArray: function (value) {
     if (value) {
       return value.split(',')
     }
     return []
   },
- /**
-  *  去除回车换行
-  * @param value
-  */
-  trimBr: function(value) {
+  /**
+   * 修剪文本
+   * @param value 
+   *  @param index 
+   */
+  trimText: function (value, index) {
+    var str = value
     if (value) {
-      var re = getRegExp('<br />\n', 'g')
-      return value.replace(re, '');
+      var start = ''
+      // 是否以数字序号开头
+      var re = getRegExp('^\d\.')
+      if (!re.test(value)) {
+        start = index + 1 + '. '
+      }
+      // 去除回车换行
+      re = getRegExp('<br />\n', 'g')
+      str = start + value.replace(re, '');
     }
-    return ''
+    return str
+  },
+
+  /**
+   * 获取简述
+   * @param result 
+   */
+  getBriefList: function (result) {
+    return [
+      { key: 'preparetime', description: '准备时间' },
+      { key: 'cookingtime', description: '制作时间' },
+      { key: 'peoplenum', description: '用餐人数' }
+    ].map(function (item) {
+      var key = item.key
+      return {
+        key: key,
+        value: result[key],
+        description: item.description
+      }
+    })
   }
 }

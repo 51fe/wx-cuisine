@@ -1,14 +1,14 @@
 <view class="navbar">
-  <text 
+  <view 
     wx:for="{{ navs }}" 
     wx:key="id"
     id="{{ item.id }}"
     class="nav-item {{currentId === item.id ? 'activeClass' : ''}}" 
     bindtap="handleSelect"
-  >{{ item.name }}</text>
+  >{{ item.name }}</view>
 </view>
 
 <empty-data wx:if="{{list.length === 0}}" loading="{{ loading }}"></empty-data>
-<scroll-view wx:else scroll-y style="height: {{windowHeight}}px;" bindscrolltolower="loadMore">
+<scroll-view wx:else scroll-y bindscrolltolower="loadMore" bindscroll="handleScroll">
   <base-list list="{{list}}"></base-list>
 </scroll-view>

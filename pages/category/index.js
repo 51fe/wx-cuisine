@@ -4,14 +4,20 @@ Page({
   data: {
     vtabs: [],
     activeTab: 0,
-    loading: false
+    loading: true
   },
 
   onLoad() {
     this.setData({ loading: true })
+    wx.showLoading({
+      title: '加载中',
+      icon: 'loading'
+    })
     request('recipe_class',).then(vtabs => {
+      wx.hideLoading()
       this.setData({ vtabs, loading: false })
     }).catch(() => {
+      wx.hideLoading()
       this.setData({ loading: false })
     })
   },

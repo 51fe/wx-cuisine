@@ -14,8 +14,7 @@ Component({
   },
 
   data: {
-    favorites: [],
-    toggled: false
+    favorites: []
   },
 
   attached: function () {

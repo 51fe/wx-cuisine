@@ -1,8 +1,6 @@
 Component({
-  
-
   properties: {
-    loading : {
+    loading: {
       type: Boolean,
       default: false
     }

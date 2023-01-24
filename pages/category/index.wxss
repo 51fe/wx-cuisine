@@ -4,14 +4,21 @@
   background-color: var(--white);
 }
 
+.weui-vtabs-bar__wrp {
+  padding-top: 64rpx;
+  box-sizing: border-box;
+  background-color: var(--white-dark);
+}
+
 .wrapper {
   margin-left: 16rpx;
   margin-right: 16rpx;
 }
 
-.divider-title {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 28rpx;
   color: var(--green);
 }
 
@@ -30,7 +37,7 @@
   box-sizing: border-box;
   border-radius: 0;
   border: 1px solid var(--light);
-  background-color: var(--white-light);
+  background-color: var(--white);
   font-size: 26rpx;
   font-weight: 400;
   text-align: center;

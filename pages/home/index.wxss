@@ -1,20 +1,38 @@
 .home {
   height: 100%;
+  overflow: hidden;
 }
 
 .navbar {
   display: flex;
-  padding: 16rpx;
+  height: 80rpx;
+  align-items: center;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
   background-color: var(--white);
 }
 
 .nav-item {
-  padding-left:  8rpx;
-  padding-right:  8rpx;
-  font-size: 30rpx;
+  padding-left: 8rpx;
+  padding-right: 8rpx;
+  text-align: center;
+  font-size: 32rpx;
   color: var(--black);
 }
 
 .nav-item.activeClass {
   color: var(--green);
+}
+
+scroll-view {
+  position: absolute;
+  top: 96rpx;
+  left: 0;
+  right: 0;
+  bottom: 16rpx;
+  overflow-y: auto;
+}
+
+.empty-wrapper {
+  height: calc(100% - 96rpx);
 }
