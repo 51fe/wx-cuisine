@@ -16,23 +16,23 @@
 
 - 首页
 
-![cuisine-home.jpg](https://www.riafan.com/uploads/2108/cuisine-home.jpg)
+![cuisine-home.jpg](https://51fe.site/uploads/2108/cuisine-home.jpg)
 
 - 详情
 
-![cuisine-detail.jpg](https://www.riafan.com/uploads/2108/cuisine-detail.jpg)
+![cuisine-detail.jpg](https://51fe.site/uploads/2108/cuisine-detail.jpg)
 
 - 分类
 
-![cuisine-category.jpg](https://www.riafan.com/uploads/2108/cuisine-category.jpg)
+![cuisine-category.jpg](https://51fe.site/uploads/2108/cuisine-category.jpg)
 
 - 黑夜模式
 
-![cuisine-home-dark.jpg](https://www.riafan.com/uploads/2108/cuisine-home-dark.jpg)
+![cuisine-home-dark.jpg](https://51fe.site/uploads/2108/cuisine-home-dark.jpg)
 
 ## 扫码体验
 
-![cuisine-qr-code.jpg](https://www.riafan.com/uploads/2108/cuisine-qr-code.jpg)
+![cuisine-qr-code.jpg](https://51fe.site/uploads/2108/cuisine-qr-code.jpg)
 
 ## 获取云服务
 
